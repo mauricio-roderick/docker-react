@@ -4,4 +4,4 @@ services:
 before_install:
   - docker build -t erickmauricio/docker-react -f docker-config/dev .
 script:
-  - docker run erickmauricio/docker-react npm run test -- --coverage
+  - docker run erickmauricio/docker-react npm run test -- --coverage --watchAll=false
